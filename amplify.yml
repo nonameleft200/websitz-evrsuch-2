@@ -6,10 +6,11 @@ frontend:
         - nvm install 22
         - nvm use 22
         - node -v
+        - mv next.config.backup.ts next.config.ts
         - npm ci --legacy-peer-deps
     build:
       commands:
-        - npm run build && rm -rf .next
+        - npm run build
   artifacts:
     baseDirectory: out
     files:
