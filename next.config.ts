@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  output: 'export',
   images: {
-    unoptimized: false,
+    unoptimized: true,
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;
