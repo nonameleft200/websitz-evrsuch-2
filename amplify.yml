@@ -10,6 +10,7 @@ frontend:
     build:
       commands:
         - npm run build
+        - rm -rf .next
   artifacts:
     baseDirectory: out
     files:
